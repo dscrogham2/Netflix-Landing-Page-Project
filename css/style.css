@@ -216,6 +216,61 @@ img {
     text-align: center;
 }
 
+/* Table */
+
+.table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    /* adding grey background created lines =collpase & spacing */
+}
+
+.table thead th {
+    text-transform: uppercase;
+    padding: 0.8rem;
+}
+
+/* <td> in first-child(pseudo selector) need to align left  */
+.table tbody tr td:first-child {
+    text-align: left;
+}
+
+/* every other row grey(pseudo selector). ( */
+.table tbody tr:nth-child(odd) {
+    background: #222;
+}
+
+/* Footer */
+
+/* Text to left - need algining. no container d/t footer > container */
+.footer {
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer,
+.footer a {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+}
+
+/* Set up grid  */
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+/* line items too close together */
+.footer li {
+    line-height: 1.9;
+}
 
 /* utility: container */
 
@@ -302,4 +357,60 @@ img {
     font-size: 1rem;
     padding: 0.8rem 1.3rem;
     text-transform: uppercase;
+}
+
+@media(max-width: 960px) {
+    .showcase {
+        height: 70vh;
+        /*icons move up d/t goes 93 to 70 */
+    }
+
+    .hide-sm {
+        display: none;
+        /*-the text to disapear when getting smaller @960px or <*/
+    }
+
+    .showcase-top img {
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+        /*Moves logo to side getting smaller*/
+    }
+
+    /* to maker smaller as px get smaller  */
+    .showcase-content h1 {
+        font-size: 3.7rem;
+        line-height: 1;
+    }
+
+    .showcase-content p {
+        font-size: 1.5rem;
+    }
+
+    .footer .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+        /* to make 2 cols*/
+    }
+
+    .btn-xl {
+        font-size: 1.5rem;
+        padding: 1.4rem 2 rem;
+
+    }
+
+    .text-xl {
+        font-size: 1.5rem;
+    }
+
+    .text-xl {
+        font-size: 1.5rem;
+    }
+
+    .text-lg {
+        font-size: 1.3rem;
+    }
+
+    .text-md {
+        font-size: 1rem;
+    }
 }
