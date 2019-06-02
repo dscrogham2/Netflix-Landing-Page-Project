@@ -1,7 +1,20 @@
-"# Netflix-Landing-Page-Project" 
-DreamLister
-An iOS application where you create a list of items you wish to have one day. You have the ability to upload item information like an image, title, price, description, and store to your dream list.
+Netflix-Landing-Page-Project
+An HTML, CSS, and JavaScript application where I re-created a Netfilx landing page. 
 
 What I Learned
-Core Data (Entities, Attributes, Relationships)
-Fetch & display images and information using NSFetchedResultsController
+Organizing and whitebroading the project: making plans
+Organziing code: making utiliites for text, buttons...
+CSS Grids
+HTML containers
+Building buttons
+Hover techniques
+Using icons with Font Awesome
+Roots and custom properties(CSS variables)
+CSS reset technique
+Viewport height(vh)
+Images: files and uploading to HTML
+Pseudo-elements
+Z-index
+Box-shadowing
+Positioning: absolute and relative 
+
