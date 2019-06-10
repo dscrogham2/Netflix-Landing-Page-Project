@@ -1,9 +1,9 @@
-
 # Netflix-Landing-Page-Project
 
-HTML, CSS, and JavaScript application, re-creating a Netfilx landing page. 
+HTML, CSS, and JavaScript application, re-creating a Netfilx landing page.
 
 ## What I Learned:
+
 1. Organizing and whitebroading the project: making plans
 2. Organziing code: making utiliites for text, buttons...
 3. CSS Grids
@@ -18,5 +18,4 @@ HTML, CSS, and JavaScript application, re-creating a Netfilx landing page.
 12. Pseudo-elements
 13. Z-index
 14. Box-shadowing
-15. Positioning: absolute and relative 
-
+15. Positioning: absolute and relative

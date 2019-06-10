@@ -1,6 +1,5 @@
 /*global styling*/
 
-/*custom property(css var): to keep the look of app consistent/easily change*/
 :root {
     --primary-color: #e50914;
     --dark-color: #141414;
@@ -27,7 +26,6 @@ ul {
     list-style: none;
 }
 
-/*making text white*/
 h1,
 h2,
 h3,
@@ -35,18 +33,15 @@ h4 {
     color: #fff;
 }
 
-/*a tags=links. Make color of text white. text-decoration to remove underline*/
 a {
     color: #fff;
     text-decoration: none;
 }
 
-/*top/bottom margin in rem, 1 rem = font size of html(16px) */
 p {
     margin: 0.5rem 0;
 }
 
-/*img to take up 100%  container*/
 img {
     width: 100%;
 }
@@ -66,28 +61,22 @@ img {
     content: '';
     /*will insert text..*/
     position: absolute;
-    /*want to position inside .showcase: note it's postion is relative*/
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
-    /*applies on top*/
     background: rgba(0, 0, 0, 0.6);
-    /*text under: go to .showcase-top/content & add z-index 2*/
     box-shadow: inset 120px 100px 250px #000000, inset -120px -110px 250px #000000;
-    /*1st = thickness of the top/left & 2nd = bottom/right*/
 }
 
 /*container for logo img and sign in btn*/
 .showcase-top {
     position: relative;
     z-index: 2;
-    /*makes closer to you*/
     height: 90px;
 }
 
-/*logo img: absolute - positioned closest to it's parent(inside.showcase-top)  after top/left to far right d/t = transform property to make up for h/w of img(- make move up and left) */
 .showcase-top img {
     width: 170px;
     position: absolute;
@@ -109,30 +98,21 @@ img {
     z-index: 2;
     margin: auto;
     display: flex;
-    /*item is lined up horizonal, not where it needs to be*/
     flex-direction: column;
-    /*change to columns = vertical*/
     justify-content: center;
-    /*distrubutes space between/around content along main-axis*/
     align-items: center;
-    /*distrubution space between/around content along cross-axis*/
     text-align: center;
     margin-top: 9rem;
-    /*to move down*/
 }
 
-/*see what's next: change size*/
+
 .showcase-content h1 {
     font-weight: 700;
-    /*boldness*/
     font-size: 5.2rem;
     line-height: 1.1;
-    /*1.1 * font size sets distance bewteen lines*/
     margin: 0 0 2rem;
-    /*bottom*/
 }
 
-/*watch anywhere cancel anytime: difficult to see*/
 .showcase-content p {
     text-transform: uppercase;
     color: #fff;
@@ -161,24 +141,20 @@ img {
     text-align: center;
 }
 
-/*Increased font for tabs <p>   */
 .tabs p {
     font-size: 1.2rem;
     padding-top: 0.5rem;
 }
 
-/* Adding padding top/bottom tabs(> div = directly to icons */
 .tabs .container>div {
     padding: 1.5rem 0;
 }
 
-/* hover = turn white w/ cursor */
 .tabs .container>div:hover {
     color: #fff;
     cursor: pointer;
 }
 
-/* red tab border when hover over tabs */
 .tab-border {
     border-bottom: var(--primary-color) 4px solid;
 }
@@ -189,8 +165,8 @@ img {
     background: #000;
     color: #fff;
 }
-/* Hiding content initially */
 
+/* Hiding content initially */
 #tab-1-content,
 #tab-2-content,
 #tab-3-content {
@@ -234,7 +210,6 @@ img {
     margin-top: 2rem;
     border-collapse: collapse;
     border-spacing: 0;
-    /* adding grey background created lines =collpase & spacing */
 }
 
 .table thead th {
@@ -242,19 +217,16 @@ img {
     padding: 0.8rem;
 }
 
-/* <td> in first-child(pseudo selector) need to align left  */
 .table tbody tr td:first-child {
     text-align: left;
 }
 
-/* every other row grey(pseudo selector). ( */
 .table tbody tr:nth-child(odd) {
     background: #222;
 }
 
 /* Footer */
 
-/* Text to left - need algining. no container d/t footer > container */
 .footer {
     max-width: 75%;
     margin: 1rem auto;
@@ -271,14 +243,12 @@ img {
     margin-bottom: 1.5rem;
 }
 
-/* Set up grid  */
 .footer .footer-cols {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
 }
 
-/* line items too close together */
 .footer li {
     line-height: 1.9;
 }
@@ -287,15 +257,11 @@ img {
 
 .container {
     max-width: 70%;
-    /*shirks with changing size of screen*/
     margin: auto;
-    /*everything in the center*/
     overflow: hidden;
-    /*want everything to stay in container*/
     padding: 0 2rem;
 }
 
-/* utility: text styles */
 .text-xl {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -319,50 +285,36 @@ img {
     color: #999;
 }
 
-
-
-/* utility: class btn */
-
 .btn {
     display: inline-block;
-    /* inline-block: but able to adjust height.*/
     background: var(--primary-color);
-    /* css var */
     color: #fff;
     padding: 0.4rem 1.3rem;
     font-size: 1rem;
     text-align: center;
     border: none;
     cursor: pointer;
-    /*thinking about furture*/
     margin-right: 0.5rem;
-    /*just in-case btns next together*/
     outline: none;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-    /*offset-x, offset-y, blur-radius*/
     border-radius: 2px;
-    /*rounding default*/
 }
 
 .btn:hover {
     opacity: 0.9;
-    /*see thought =  changing color*/
 }
 
 /* style btns sizes */
 
-/*sign in btn */
 .btn-rounded {
     border-radius: 5px;
 }
 
-/* wacth free for .. btn */
 .btn-xl {
     font-size: 2rem;
     padding: 1.5rem 2.1rem;
     text-transform: uppercase;
 }
-
 
 .btn-lg {
     font-size: 1rem;
@@ -385,11 +337,11 @@ img {
         /*-the text to disapear when getting smaller @960px or <*/
     }
 
+    /*Moves logo to side getting smaller*/
     .showcase-top img {
         top: 30%;
         left: 5%;
         transform: translate(0);
-        /*Moves logo to side getting smaller*/
     }
 
     /* to maker smaller as px get smaller  */
@@ -404,7 +356,6 @@ img {
 
     .footer .footer-cols {
         grid-template-columns: repeat(2, 1fr);
-        /* to make 2 cols*/
     }
 
     .btn-xl {
