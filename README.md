@@ -1,4 +1,4 @@
-Netflix-Landing-Page-Project, this is the header
+# header Netflix-Landing-Page-Project
 An HTML, CSS, and JavaScript application where I re-created a Netfilx landing page. 
 
 What I Learned
