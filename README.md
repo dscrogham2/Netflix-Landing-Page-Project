@@ -18,9 +18,5 @@ HTML, CSS, and JavaScript application, re-creating a Netfilx landing page.
 12. Pseudo-elements
 13. Z-index
 14. Box-shadowing
-<<<<<<< HEAD
-15. Positioning: absolute and relative
-=======
 15. Positioning: absolute and relative 
 16. Github Markdowns
->>>>>>> a10150cfa40fa6068feae37b571b474b38e69d64
