@@ -2,7 +2,7 @@
 
 HTML, CSS, and JavaScript application, re-creating a Netfilx landing page.
 
-## What I Learned:
+## What was Learned:
 
 1. Organizing and whitebroading the project: making plans
 2. Organziing code: making utiliites for text, buttons...
